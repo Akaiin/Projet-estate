@@ -12,42 +12,44 @@
         <title>Document</title>
     </head>
     <body>
-        <header class="header">
-            <img src="images/photo.svg" alt="logo" class="header__logo" />
-            <nav class="header__nav">
-                <a href="#">Home</a>
-                <a href="#">About</a>
-                <a href="#">Property</a>
-                <a href="#">Blog</a>
-                <a href="#">Contact</a>
-            </nav>
-        </header>
-        <div class="deals">
-            <p class="deals__offering">We are offering the</p>
-            <h1 class="deals__title">Best Real Estate Deals</h1>
-            <p class="deals__subtitle">
-                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                amet sint. Velit officia consequat duis enim velit mollit.
-                Exercitation veniam consequat sunt nostrud amet.
-            </p>
-            <button type="button" class="deals--btn btn">More Details</button>
-        </div>
-        <div class="find__container">
-            <div class="find__title">
-                <p>Find Your Home</p>
-                <i class="fa-solid fa-magnifying-glass"></i>
+        <div class="hero">
+            <header class="header">
+                <img src="images/logo.svg" alt="logo" class="header__logo" />
+                <nav class="header__nav">
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Property</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Contact</a>
+                </nav>
+            </header>
+            <div class="hero__text">
+                <p class="hero__offering">We are offering the</p>
+                <h1 class="hero__title">Best Real Estate Deals</h1>
+                <p class="hero__subtitle">
+                    Amet minim mollit non deserunt ullamco est sit aliqua dolor
+                    do amet sint. Velit officia consequat duis enim velit
+                    mollit. Exercitation veniam consequat sunt nostrud amet.
+                </p>
+                <a href="#" class="hero__link">More Details</a>
             </div>
-            <div class="find__select">
-                <select name="location" id="location__select">
-                    <option value="">Location</option>
-                </select>
-                <select name="category" id="category__select">
-                    <option value="">Category</option>
-                </select>
-                <select name="property" id="property__select">
-                    <option value="">Property Type</option>
-                </select>
-                <button type="button" class="find--btn btn">Search</button>
+            <div class="find__container">
+                <div class="find__title">
+                    <p>Find Your Home</p>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <div class="find__select">
+                    <select name="location" id="location__select">
+                        <option value="">Location</option>
+                    </select>
+                    <select name="category" id="category__select">
+                        <option value="">Category</option>
+                    </select>
+                    <select name="property" id="property__select">
+                        <option value="">Property Type</option>
+                    </select>
+                    <button type="button" class="find--btn btn">Search</button>
+                </div>
             </div>
         </div>
         <section class="property">
@@ -85,29 +87,35 @@
                 />
             </div>
         </section>
-        <section class="feature">
-            <h2 class="feature__title">Our Features</h2>
+        <section class="features">
+            <h2 class="features__title">Our Features</h2>
             <div class="features__container">
-                <div class="living">
-                    <h3 class="living__title">Living Inside a Nature</h3>
-                    <p class="living__subtitle">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Eget diam habitant massa in.
-                    </p>
-                </div>
-                <div class="royal">
-                    <h3 class="royal__title">Royal Touch Paint</h3>
-                    <p class="royal__subtitle">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Eget diam habitant massa in.
-                    </p>
-                </div>
-                <div class="fittings">
-                    <h3 class="fittings__title">Luxurious Fittings</h3>
-                    <p class="fittings__subtitle">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Eget diam habitant massa in.
-                    </p>
+                <div class="features__cards-container">
+                    <div class="features__card">
+                        <h3 class="features__card__title">
+                            Living Inside a Nature
+                        </h3>
+                        <p class="features__card__subtitle">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Eget diam habitant massa in.
+                        </p>
+                    </div>
+                    <div class="features__card">
+                        <h3 class="features__card__title">Royal Touch Paint</h3>
+                        <p class="features__card__subtitle">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Eget diam habitant massa in.
+                        </p>
+                    </div>
+                    <div class="features__card">
+                        <h3 class="features__card__title">
+                            Luxurious Fittings
+                        </h3>
+                        <p class="features__card__subtitle">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Eget diam habitant massa in.
+                        </p>
+                    </div>
                 </div>
                 <img
                     src="images/our-features-1.jpg"
@@ -125,125 +133,266 @@
                     mollit. Exercitation veniam consequat sunt nostrud amet.
                 </p>
             </div>
-            <div class="interior--1">
+            <div class="interior">
                 <img
                     src="images/recent-1.jpg"
                     alt="photo recent 1"
                     class="interior__photo"
                 />
                 <div class="interior__text">
-                    <h3 class="interior_title">Interior Design</h3>
-                    <p class="interior_subtitle">
+                    <h3 class="interior__title">Interior Design</h3>
+                    <p class="interior__subtitle">
                         Amet minim mollit non deserunt ullamco est sit aliqua
                         dolor do amet sint. Velit officia consequat duis enim
                         velit mollit. Exercitation veniam consequat sunt nostrud
                         amet. Amet minim mollit non deserunt ullamco est sit
                         aliqua dolor do amet sint. Velit officia consequat duis
-                        enim velit mollit... <strong class="read__more"> Read more </strong>
+                        enim velit mollit...
+                        <a href="#" class="interior__link">Read more</a>
                     </p>
-                        <p class="number"><strong class="strong__number">$ 20,000/</strong>month</p>
-                    </div>
+                    <p class="rent">
+                        <span class="rent__price">$ 20,000/</span>month
+                    </p>
                 </div>
-                <div class="interior--2">
+                <div class="interior">
                     <div class="interior__text">
-                        <h3 class="interior__title__black">Interior Design</h3>
-                        <p class="interior_subtitle">
-                            Amet minim mollit non deserunt ullamco est sit aliqua
-                            dolor do amet sint. Velit officia consequat duis enim
-                            velit mollit. Exercitation veniam consequat sunt nostrud
-                            amet. Amet minim mollit non deserunt ullamco est sit
-                            aliqua dolor do amet sint. Velit officia consequat duis
-                            enim velit mollit... <strong class="read__more"> Read more </strong>
-                            <p class="number"><strong class="strong__number">$ 26,000/</strong>month</p>    
+                        <h3 class="interior__title--black interior__title">
+                            Interior Design
+                        </h3>
+                        <p class="interior__subtitle">
+                            Amet minim mollit non deserunt ullamco est sit
+                            aliqua dolor do amet sint. Velit officia consequat
+                            duis enim velit mollit. Exercitation veniam
+                            consequat sunt nostrud amet. Amet minim mollit non
+                            deserunt ullamco est sit aliqua dolor do amet sint.
+                            Velit officia consequat duis enim velit mollit...
+                            <strong class="read__more"> Read more </strong>
+                        </p>
+
+                        <p class="rent">
+                            <span class="rent__price">$ 26,000/</span>month
+                        </p>
                     </div>
-                    <img src="images/featured-4.jpg" alt="interior photo 2" class="interior_photo">
+                    <img
+                        src="images/recent-2.jpg"
+                        alt="interior photo 2"
+                        class="interior_photo"
+                    />
                 </div>
             </div>
-            <button type="button" class="interior--btn btn">View more</button>
+            <button type="button" class="interior__btn btn">View more</button>
         </section>
         <section class="team">
             <div class="team__text">
-            <h3 class="team__title">Meet Our Team</h3>
-            <p class="team_subtitle">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                <h2 class="team__title">Meet Our Team</h2>
+                <p class="team__subtitle">
+                    Amet minim mollit non deserunt ullamco est sit aliqua dolor
+                    do amet sint. Velit officia consequat duis enim velit
+                    mollit. Exercitation veniam consequat sunt nostrud amet.
+                </p>
             </div>
             <div class="team__container">
-                <div class="kathryn">
-                    <img src="images/team-1.jpg" alt="team 1" class="team__photo">
+                <div class="team__card">
+                    <img
+                        src="images/team-1.jpg"
+                        alt="Kathryn Murphy"
+                        class="team__photo"
+                    />
                     <p class="team__name">Kathryn Murphy</p>
-                    <p class="team__position">Co-Founder</p>
+                    <p class="team__job">Co-Founder</p>
                 </div>
-                <div class="brooklyn">
-                    <img src="images/team-2.jpg" alt="team 2" class="team__photo">
+                <div class="team__card">
+                    <img
+                        src="images/team-2.jpg"
+                        alt="Brooklyn Simmons"
+                        class="team__photo"
+                    />
                     <p class="team__name">Brooklyn Simmons</p>
-                    <p class="team__position">Founder</p>
+                    <p class="team__job">Founder</p>
                 </div>
-                <div class="floyd">
-                    <img src="images/team-3.jpg" alt="team 3" class="photo__team">
+                <div class="team__card">
+                    <img
+                        src="images/team-3.jpg"
+                        alt="Floyd Miles"
+                        class="team__photo"
+                    />
                     <p class="team__name">Floyd Miles</p>
-                    <p class="team__position">Founder</p>
+                    <p class="team__job">Founder</p>
                 </div>
-                <div class="ronald">
-                    <img src="images/team-4.jpg" alt="team 4" class="photo__team">
+                <div class="team__card">
+                    <img
+                        src="images/team-4.jpg"
+                        alt="Ronald Richards"
+                        class="team__photo"
+                    />
                     <p class="team__name">Ronald Richards</p>
-                    <p class="team__position">Co-Founder</p>
+                    <p class="team__job">Co-Founder</p>
                 </div>
             </div>
         </section>
         <section class="client">
             <div class="client__text">
-                <h3 class="client__title">Our Clients Speak</h3>
-                <p class="client__subtitle">We have been working with clients around the world</p> 
+                <h2 class="client__title">Our Clients Speak</h2>
+                <p class="client__subtitle">
+                    We have been working with clients around the world
+                </p>
             </div>
             <div class="client__container">
-                <div class="partner">
-                    <div class="partner__text">
-                        <img src="images/icon-quotes.svg" alt="quotes" class="quotes">
-                        <p class="partner__title">Professional Partner</p>
-                        <p class="partner__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor non sit sed magna pharetra in amet porta enim.</p>
+                <div class="client__card">
+                    <div class="client__testimony">
+                        <img
+                            src="images/icon-quotes.svg"
+                            alt=""
+                            class="quotes"
+                        />
+                        <p class="client__testimony__title">
+                            Professional Partner
+                        </p>
+                        <p class="client__testimony__subtitle">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Auctor non sit sed magna pharetra in amet
+                            porta enim.
+                        </p>
                     </div>
-                    <div class="partner__lorri">
-                        <img src="images/client-1.jpg" alt="client 1" class="client__photo">
+                    <div class="client__author">
+                        <img
+                            src="images/client-1.jpg"
+                            alt="Lorri Warf Photo"
+                            class="client__photo"
+                        />
                         <p class="client__name">Lorri Warf</p>
-                        <p class="client__position">UX Designer</p>
+                        <p class="client__job">UX Designer</p>
                     </div>
-                    <div class="experience__text">
-                        <img src="images/icon-quotes.svg" alt="quotes" class="quotes">
-                        <p class="partner__title">Incredible Experience</p>
-                        <p class="partner__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor non sit sed magna pharetra in amet porta enim.</p>
+                </div>
+                <div class="client__card">
+                    <div class="client__testimony">
+                        <img
+                            src="images/icon-quotes.svg"
+                            alt=""
+                            class="quotes"
+                        />
+                        <p class="client__testimony__title">
+                            Incredible Experience
+                        </p>
+                        <p class="client__testimony__subtitle">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Auctor non sit sed magna pharetra in amet
+                            porta enim.
+                        </p>
                     </div>
-                    <div class="partner__david">
-                        <img src="images/client-2.jpg" alt="client 2" class="client__photo">
+                    <div class="client__author">
+                        <img
+                            src="images/client-2.jpg"
+                            alt="David Elson Photo"
+                            class="client__photo"
+                        />
                         <p class="client__name">David Elson</p>
-                        <p class="client__position">Developer</p>
+                        <p class="client__job">Developer</p>
                     </div>
-                    <div class="responsive__text">
-                        <img src="images/icon-quotes.svg" alt="quotes" class="quotes">
-                        <p class="partner__title">Dependable & Responsive</p>
-                        <p class="partner__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor non sit sed magna pharetra in amet porta enim.</p>
+                </div>
+                <div class="client__card">
+                    <div class="client__testimony">
+                        <img
+                            src="images/icon-quotes.svg"
+                            alt=""
+                            class="quotes"
+                        />
+                        <p class="client__testimony__title">
+                            Dependable & Responsive
+                        </p>
+                        <p class="client__testimony__subtitle">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Auctor non sit sed magna pharetra in amet
+                            porta enim.
+                        </p>
                     </div>
-                    <div class="partner__ricky">
-                        <img src="images/client-3.jpg" alt="client 3" class="client__photo">
+                    <div class="client__author">
+                        <img
+                            src="images/client-3.jpg"
+                            alt="Ricky Smith Photo"
+                            class="client__photo"
+                        />
                         <p class="client__name">Ricky Smith</p>
-                        <p class="client__position">Developer</p>
+                        <p class="client__job">Developer</p>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="miss">
-                <h2 class="miss__title">Don't Miss A Thing!</h2>
-                <p class="miss__subtitle">Subscribe with Email and loads of interesting news will be sent to you on a daily basis.</p>
-                <form class="middle_form">
-                    <input
-                        id="emailAddresss"
-                        type="email"
-                        placeholder="Your email here"
-                        class="miss_email"
-                    />
-                    <button
-                        type="submit"
-                        class="button miss__button"
-                    >Subscribe</button>
-                </form>
+        <section class="subscribe">
+            <h2 class="subscribe__title">Don't Miss A Thing!</h2>
+            <p class="subscribe__subtitle">
+                Subscribe with Email and loads of interesting news will be sent
+                to you on a daily basis.
+            </p>
+            <form class="subscribe__form">
+                <input
+                    id="emailAddresss"
+                    type="email"
+                    placeholder="Your email here"
+                    class="subscribe_email"
+                />
+                <button type="submit" class="button subscribe__button">
+                    Subscribe
+                </button>
+            </form>
         </section>
+        <footer class="footer">
+            <div class="footer__left">
+                <h2>
+                    <img
+                        src="images/logo.svg"
+                        alt="logo logoipsum"
+                        class="logo footer__logo"
+                    />
+                </h2>
+                <p class="grey">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+            </div>
+            <div class="footer__properties">
+                <h3 class="footer__title">Recent Properties</h3>
+                <div class="footer__property">
+                    <img
+                        src="images/recent-3.jpg"
+                        alt="illinois property"
+                        class="photo footer__photo"
+                    />
+                    <div class="footer__location">
+                        <p class="footer__property__adress">
+                            2972 Westheimer Rd. Santa Ana, Illinois 85486.
+                        </p>
+                        <p class="footer__rent">$ 20,000</p>
+                    </div>
+                </div>
+                <div class="footer__property">
+                    <img
+                        src="images/recent-4.jpg"
+                        alt="connecticut property"
+                        class="photo footer__photo"
+                    />
+                    <div class="footer__location">
+                        <p class="footer__property__address">
+                            2118 Thornridge Cir. Syracuse, Connecticut 35624
+                        </p>
+                        <p class="footer__rent">$ 28,000</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__contact">
+                <h3 class="footer__title">Contact Info</h3>
+                <p class="footer__contact__address">
+                    2972 Westheimer Rd. Santa Ana, Illinois 85486.
+                </p>
+                <p><span class="grey">Phone:</span> (239) 555-0108</p>
+                <p>
+                    <span class="grey">Email:</span>
+                    abcd@domain.com
+                </p>
+                <p>
+                    <span class="grey">Website:</span>
+                    abcd@domain.in
+                </p>
+            </div>
+        </footer>
     </body>
 </html>
