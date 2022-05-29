@@ -16,11 +16,13 @@
             <header class="header">
                 <img src="images/logo.svg" alt="logo" class="header__logo" />
                 <nav class="header__nav">
-                    <a href="#">Home</a>
-                    <a href="#">About</a>
-                    <a href="#">Property</a>
-                    <a href="#">Blog</a>
-                    <a href="#">Contact</a>
+                    <ul class="header__list">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Property</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
                 </nav>
             </header>
             <div class="hero__text">
@@ -31,60 +33,78 @@
                     do amet sint. Velit officia consequat duis enim velit
                     mollit. Exercitation veniam consequat sunt nostrud amet.
                 </p>
-                <a href="#" class="hero__link">More Details</a>
+                <a href="#" class="hero__link btn">More Details</a>
             </div>
             <div class="find__container">
                 <div class="find__title">
                     <p>Find Your Home</p>
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </div>
-                <div class="find__select">
-                    <select name="location" id="location__select">
+                <div class="find__select__container">
+                    <select
+                        name="location"
+                        id="location__select"
+                        class="find__select"
+                    >
                         <option value="">Location</option>
                     </select>
-                    <select name="category" id="category__select">
+                    <select
+                        name="category"
+                        id="category__select"
+                        class="find__select"
+                    >
                         <option value="">Category</option>
                     </select>
-                    <select name="property" id="property__select">
+                    <select
+                        name="property"
+                        id="property__select"
+                        class="find__select"
+                    >
                         <option value="">Property Type</option>
                     </select>
-                    <button type="button" class="find--btn btn">Search</button>
+                    <button type="button" class="find__btn btn">Search</button>
                 </div>
             </div>
         </div>
         <section class="property">
-            <h2 class="property__title">Featured Properties</h2>
-            <p class="property__subtitle">
-                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                amet sint. Velit officia consequat duis enim velit mollit.
-                Exercitation veniam consequat sunt nostrud amet.
-            </p>
+            <div class="property__text">
+                <h2 class="property__title">Featured Properties</h2>
+                <p class="property__subtitle">
+                    Amet minim mollit non deserunt ullamco est sit aliqua dolor
+                    do amet sint. Velit officia consequat duis enim velit
+                    mollit. Exercitation veniam consequat sunt nostrud amet.
+                </p>
+            </div>
             <div class="property__photos">
                 <img
                     src="images/featured-1.jpg"
                     alt="photo1"
-                    class="property__photo photo__left"
+                    class="photo__left"
                 />
-                <img
-                    src="images/featured-2.jpg"
-                    alt="photo2"
-                    class="property__photo"
-                />
-                <img
-                    src="images/featured-4.jpg"
-                    alt="photo4"
-                    class="property__photo"
-                />
-                <img
-                    src="images/featured-3.jpg"
-                    alt="photo3"
-                    class="property__photo"
-                />
-                <img
-                    src="images/featured-5.jpg"
-                    alt="photo5"
-                    class="property__photo"
-                />
+                <div class="property__photo-2">
+                    <img
+                        src="images/featured-2.jpg"
+                        alt="photo2"
+                        class="property__photo"
+                    />
+                    <img
+                        src="images/featured-3.jpg"
+                        alt="photo3"
+                        class="property__photo"
+                    />
+                </div>
+                <div class="property__photo-3">
+                    <img
+                        src="images/featured-4.jpg"
+                        alt="photo4"
+                        class="property__photo"
+                    />
+                    <img
+                        src="images/featured-5.jpg"
+                        alt="photo5"
+                        class="property__photo"
+                    />
+                </div>
             </div>
         </section>
         <section class="features">
@@ -134,27 +154,29 @@
                 </p>
             </div>
             <div class="interior">
-                <img
-                    src="images/recent-1.jpg"
-                    alt="photo recent 1"
-                    class="interior__photo"
-                />
-                <div class="interior__text">
-                    <h3 class="interior__title">Interior Design</h3>
-                    <p class="interior__subtitle">
-                        Amet minim mollit non deserunt ullamco est sit aliqua
-                        dolor do amet sint. Velit officia consequat duis enim
-                        velit mollit. Exercitation veniam consequat sunt nostrud
-                        amet. Amet minim mollit non deserunt ullamco est sit
-                        aliqua dolor do amet sint. Velit officia consequat duis
-                        enim velit mollit...
-                        <a href="#" class="interior__link">Read more</a>
-                    </p>
-                    <p class="rent">
-                        <span class="rent__price">$ 20,000/</span>month
-                    </p>
+                <div class="interior-1">
+                    <img
+                        src="images/recent-1.jpg"
+                        alt="photo recent 1"
+                        class="interior__photo interior__photo-1"
+                    />
+                    <div class="interior__text">
+                        <h3 class="interior__title">Interior Design</h3>
+                        <p class="interior__subtitle">
+                            Amet minim mollit non deserunt ullamco est sit
+                            aliqua dolor do amet sint. Velit officia consequat
+                            duis enim velit mollit. Exercitation veniam
+                            consequat sunt nostrud amet. Amet minim mollit non
+                            deserunt ullamco est sit aliqua dolor do amet sint.
+                            Velit officia consequat duis enim velit mollit...
+                            <a href="#" class="read__more">Read more</a>
+                        </p>
+                        <p class="rent">
+                            <span class="rent__price">$ 20,000/</span>Month
+                        </p>
+                    </div>
                 </div>
-                <div class="interior">
+                <div class="interior-2">
                     <div class="interior__text">
                         <h3 class="interior__title--black interior__title">
                             Interior Design
@@ -166,21 +188,21 @@
                             consequat sunt nostrud amet. Amet minim mollit non
                             deserunt ullamco est sit aliqua dolor do amet sint.
                             Velit officia consequat duis enim velit mollit...
-                            <strong class="read__more"> Read more </strong>
+                            <a href="#" class="read__more"> Read more </a>
                         </p>
 
                         <p class="rent">
-                            <span class="rent__price">$ 26,000/</span>month
+                            <span class="rent__price">$ 26,000/</span>Month
                         </p>
                     </div>
                     <img
                         src="images/recent-2.jpg"
                         alt="interior photo 2"
-                        class="interior_photo"
+                        class="interior__photo interior__photo-2"
                     />
                 </div>
             </div>
-            <button type="button" class="interior__btn btn">View more</button>
+            <a href="#" class="interior__btn btn">View more</a>
         </section>
         <section class="team">
             <div class="team__text">
