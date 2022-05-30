@@ -321,3 +321,214 @@ h2 {
     height: 48px;
     left: calc(50% - 168px / 2);
 }
+
+.team {
+    margin-top: 300px;
+}
+
+.team__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+.team__subtitle {
+    color: rgba(47, 35, 79, 0.8);
+    font-size: 18px;
+}
+
+.team__container {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 300px 150px 300px;
+}
+
+.team__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.team__photo {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.team__name {
+    font-size: 18px;
+    font-weight: 700px;
+}
+
+.team__job {
+    color: rgba(47, 35, 79, 0.5);
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.client__container {
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+.client__subtitle {
+    font-size: 18px;
+    color: rgba(47, 35, 79, 0.8);
+    margin-bottom: 80px;
+}
+
+.client__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.client__card {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.quotes {
+    width: 32px;
+    height: 27px;
+}
+
+.client__photo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.client__testimony {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.07);
+    border-radius: 8px;
+    width: 350px;
+    height: 200px;
+    padding: 10px 30px 46px 30px;
+    gap: 8px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.client__testimony__title {
+    font-size: 18px;
+}
+
+.client__testimony__subtitle {
+    font-size: 14px;
+    color: rgba(47, 35, 79, 1);
+}
+
+.client__author {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.client__name {
+    font-size: 18px;
+    font-weight: 700;
+    color: rgba(47, 35, 79, 0.8);
+}
+
+.client__job {
+    font-size: 18px;
+    color: rgba(47, 35, 79, 0.5);
+}
+
+.client__dot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.dot {
+    color: rgba(127, 87, 241, 1);
+    font-size: 7px;
+    margin: 10px;
+}
+
+.dot__middle {
+    color: rgba(127, 87, 241, 1);
+}
+
+.subscribe {
+    background-color: #7f57f1;
+    width: 100%;
+    height: 416px;
+    padding-left: 300px;
+    padding-right: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.subscribe__left {
+    width: 50%;
+    height: 600px;
+}
+
+.subscribe__square {
+    width: 296px;
+    height: 296px;
+    box-shadow: 5px 5px 10px rgba(22, 27, 29, 0.23);
+}
+
+.subscribe__square-1 {
+    transform: rotate(16deg);
+}
+
+.subscribe__square-2 {
+    transform: rotate(36deg);
+    margin-left: 160px;
+}
+
+.subscribe__right {
+    width: 50%;
+}
+
+.subscribe__title {
+    color: white;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.subscribe__subtitle {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.subscribe__form {
+    display: flex;
+    align-items: center;
+}
+
+.subscribe__email {
+    width: 450px;
+    height: 56px;
+    border-radius: 8px 0px 0px 8px;
+    padding: 16px 24px;
+    border: none;
+}
+
+.subscribe__button {
+    width: 180px;
+    height: 56px;
+    background-color: #865cfe;
+    border-radius: 0px 8px 8px 0px;
+    box-shadow: 0px 1px 2px rgba(127, 87, 241, 0.05);
+    color: white;
+    cursor: pointer;
+    border: none;
+}
