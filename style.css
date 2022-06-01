@@ -41,7 +41,7 @@ a {
 .header__list {
     list-style: none;
     display: flex;
-    gap: 10px;
+    gap: 40px;
     font-size: 14px;
 }
 
@@ -66,6 +66,16 @@ h1 {
 
 .hero__offering {
     margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.hero__offering::before {
+    content: "";
+    height: 1px;
+    width: 72px;
+    background: white;
+    margin-right: 10px;
 }
 
 .hero__subtitle {
@@ -83,6 +93,7 @@ h1 {
 
 .hero__link {
     padding-top: 8px;
+    font-size: 16px;
 }
 
 .find__container {
@@ -139,7 +150,6 @@ h1 {
 .property {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
 }
 h2 {
     color: #7f57f1;
@@ -165,15 +175,27 @@ h2 {
     margin-bottom: 68px;
 }
 
+.arrow {
+    height: 60px;
+    width: 60px;
+    margin-top: 25px;
+}
+
+.arrow__link {
+    width: 60px;
+    height: 20px;
+}
+
 .property__photos {
-    height: 560px;
-    width: 1660px;
+    width: 1250px;
     display: flex;
     flex-direction: row;
     margin-left: 112px;
     margin-right: 112px;
-    justify-content: center;
     margin-bottom: 80px;
+    justify-content: space-between;
+    align-self: center;
+    flex-wrap: wrap;
 }
 
 .photo__left {
@@ -181,6 +203,7 @@ h2 {
     height: 565px;
     border-radius: 6px;
     margin-right: 32px;
+    position: absolute;
 }
 
 .property__photo {
@@ -189,16 +212,70 @@ h2 {
     border-radius: 6px;
     margin-bottom: 32px;
     margin-right: 32px;
+    position: absolute;
 }
 
 .property__photo-2 {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 
 .property__photo-3 {
     display: flex;
     flex-direction: column;
+}
+
+.property__card {
+    position: relative;
+    width: 384px;
+    height: 265px;
+}
+
+.property__card:hover .photo__overlay {
+    opacity: 1;
+    transition: opacity 1s ease-out;
+}
+
+.property__card--big {
+    width: 400px;
+    height: 565px;
+}
+
+.photo__overlay {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.65);
+    width: 100%;
+    height: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    opacity: 0;
+    transition: opacity 1s ease-out;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 6px;
+    align-items: center;
+}
+
+.photo__overlay--big {
+    padding-top: 200px;
+}
+
+.photo__title {
+    margin-bottom: 20px;
+    font-family: "Playfair Display", serif;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.photo__subtitle {
+    line-height: 22px;
+    font-weight: 500;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.8);
+    text-align: center;
 }
 
 .features {
@@ -214,6 +291,10 @@ h2 {
     height: 600px;
     align-items: center;
     margin-bottom: 80px;
+}
+
+.features__title {
+    font-family: "Playfair Display", serif;
 }
 
 .features__card {
@@ -379,6 +460,33 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 280px;
+    height: 368px;
+    border-radius: 8px;
+    padding-top: 15px;
+}
+
+.team__social {
+    opacity: 0;
+}
+
+.social__icon {
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+.team__card:hover .team__social {
+    opacity: 1;
+}
+
+.team__card:hover .team__photo {
+    width: 216px;
+    height: 216px;
+    transition: all 0.25s 0.25s;
+}
+
+.team__card:hover {
+    box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.07);
 }
 
 .team__photo {
@@ -430,6 +538,7 @@ h2 {
     width: 50px;
     height: 50px;
     border-radius: 50%;
+    object-fit: cover;
 }
 
 .client__testimony {
@@ -503,7 +612,6 @@ h2 {
     padding-right: 300px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
     overflow: hidden;
 }
 
@@ -515,19 +623,16 @@ h2 {
 .subscribe__square {
     width: 296px;
     height: 296px;
-    box-shadow: 5px 0px 6px rgba(22, 27, 29, 0.23);
+    box-shadow: 9px 0px 10px rgba(22, 27, 29, 0.23);
 }
 
 .subscribe__square-1 {
-    transform: rotate(16deg);
+    transform: translatey(-70px) rotate(16deg);
     border-left-width: 0px;
 }
 
 .subscribe__square-2 {
-    transform: rotate(36deg);
-    position: absolute;
-    left: 480px;
-    top: 5550px;
+    transform: translate(186px, -166px) rotate(36deg);
 }
 
 .subscribe__right {
@@ -539,6 +644,7 @@ h2 {
     margin-bottom: 10px;
     font-weight: 700;
     font-family: "Playfair Display", serif;
+    padding-top: 75px;
 }
 
 .subscribe__subtitle {
