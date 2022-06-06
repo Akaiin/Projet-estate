@@ -20,8 +20,9 @@ body {
 .header {
     display: flex;
     justify-content: space-between;
-    padding-left: 300px;
-    padding-right: 300px;
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
     background: rgba(0, 0, 0, 0.15);
     height: 72px;
     align-items: center;
@@ -46,19 +47,22 @@ a {
 }
 
 h1 {
-    font-size: 40px;
+    font-size: 72px;
     margin-bottom: 16px;
     margin-top: 8px;
+    font-weight: 700;
+    font-family: "Playfair Display", serif;
+    line-height: 90px;
 }
 
 .hero__text {
     margin-top: 314px;
-    margin-left: 300px;
-    margin-bottom: 100px;
+    margin-left: 5%;
+    margin-bottom: 5%;
     color: white;
     display: flex;
     flex-direction: column;
-    width: 727px;
+    width: 60%;
     height: 300px;
     font-size: 18px;
     line-height: 32px;
@@ -80,6 +84,7 @@ h1 {
 
 .hero__subtitle {
     margin-bottom: 32px;
+    font-weight: 500;
 }
 
 .btn {
@@ -93,22 +98,25 @@ h1 {
 
 .hero__link {
     padding-top: 8px;
+    padding-bottom: 10px;
     font-size: 16px;
 }
 
 .find__container {
-    width: 1250px;
+    width: 90%;
     height: 212px;
     position: absolute;
     background: white;
     border-radius: 8px;
-    left: calc(50% - 1300px / 2);
+    left: calc(50% - 1700px / 2);
     top: 846px;
     display: flex;
     flex-direction: column;
     padding-top: 40px;
     padding-left: 39px;
     margin-bottom: 40px;
+    margin-left: 5%;
+    margin-right: 5%;
     box-shadow: 0px 30px 40px rgba(212, 217, 232, 0.2);
 }
 
@@ -160,8 +168,8 @@ h2 {
 .property__subtitle {
     font-size: 18px;
     color: rgba(47, 35, 79, 0.8);
-    margin-left: 150px;
-    margin-right: 150px;
+    margin-left: 5%;
+    margin-right: 5%;
     text-align: center;
     line-height: 32px;
 }
@@ -170,8 +178,8 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-left: 220px;
-    margin-right: 220px;
+    margin-left: 5%;
+    margin-right: 5%;
     margin-bottom: 68px;
 }
 
@@ -187,17 +195,16 @@ h2 {
 }
 
 .property__photos {
-    width: 1250px;
+    width: 90%;
     display: flex;
     flex-direction: row;
-    margin-left: 112px;
-    margin-right: 112px;
+    margin-left: 5%;
+    margin-right: 5%;
     margin-bottom: 80px;
-    justify-content: space-between;
-    align-self: center;
+    justify-content: center;
     flex-wrap: wrap;
+    gap: 30px;
 }
-
 .photo__left {
     width: 400px;
     height: 565px;
@@ -207,7 +214,7 @@ h2 {
 }
 
 .property__photo {
-    width: 384px;
+    width: 400px;
     height: 265px;
     border-radius: 6px;
     margin-bottom: 32px;
@@ -219,11 +226,14 @@ h2 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: 30px;
 }
 
 .property__photo-3 {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
 }
 
 .property__card {
@@ -279,16 +289,16 @@ h2 {
 }
 
 .features {
-    margin-left: 300px;
     margin-top: 96px;
-    margin-right: 300px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 .features__container {
     display: flex;
     justify-content: space-between;
-    width: 1300px;
-    height: 600px;
     align-items: center;
     margin-bottom: 80px;
 }
@@ -297,13 +307,18 @@ h2 {
     font-family: "Playfair Display", serif;
 }
 
+.features__cards-container {
+    width: 50%;
+    margin-right: 10px;
+}
+
 .features__card {
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
     box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.07);
     border-radius: 8px;
-    width: 550px;
+    width: 100%;
     height: 157px;
     padding: 24px;
 }
@@ -325,7 +340,10 @@ h2 {
     width: 436px;
     height: 436px;
     border-radius: 50%;
-    margin-right: px;
+}
+
+.design {
+    width: 100%;
 }
 
 .design__text {
@@ -333,34 +351,33 @@ h2 {
     flex-direction: column;
     align-items: center;
     margin-bottom: 74px;
-    margin-left: 216px;
-    margin-right: 216px;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 .design__subtitle {
     color: rgba(47, 35, 79, 0.8);
     font-size: 18px;
     text-align: center;
-    margin-left: 150px;
-    margin-right: 150px;
+    margin-left: 5%;
+    margin-right: 5%;
     line-height: 32px;
 }
 
 .interior {
-    margin-left: 300px;
     margin-bottom: 50px;
 }
 
-.interior-1 {
-    display: flex;
-}
-
+.interior-1,
 .interior-2 {
     display: flex;
+    justify-content: center;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .interior__photo {
-    width: 592px;
+    width: 48%;
     height: 377px;
     border-radius: 8px;
 }
@@ -376,12 +393,13 @@ h2 {
 .interior__text {
     display: flex;
     flex-direction: column;
-    width: 592px;
+    width: 48%;
     height: 377px;
     background: #f6f3ff;
     border-radius: 4px;
     margin-bottom: 32px;
     padding: 43px 42px;
+    justify-content: space-between;
 }
 
 .interior__title {
@@ -396,7 +414,6 @@ h2 {
 
 .interior__subtitle {
     font-size: 14px;
-    margin-bottom: 60px;
     font-weight: 500;
     color: rgba(47, 35, 79, 0.8);
     line-height: 26px;
@@ -433,19 +450,23 @@ h2 {
     margin-top: 300px;
 }
 
+.team__title {
+    text-align: center;
+}
+
 .team__text {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-left: 300px;
-    margin-right: 300px;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 .team__subtitle {
     color: rgba(47, 35, 79, 0.8);
     font-size: 18px;
-    margin-left: 150px;
-    margin-right: 150px;
+    margin-left: 5%;
+    margin-right: 5%;
     text-align: center;
     line-height: 32px;
 }
@@ -453,7 +474,7 @@ h2 {
 .team__container {
     display: flex;
     justify-content: space-between;
-    margin: 50px 300px 150px 300px;
+    margin: 50px 5% 150px 5%;
 }
 
 .team__card {
@@ -507,11 +528,6 @@ h2 {
     margin-top: 5px;
 }
 
-.client__container {
-    margin-left: 300px;
-    margin-right: 300px;
-}
-
 .client__subtitle {
     font-size: 18px;
     color: rgba(47, 35, 79, 0.8);
@@ -521,6 +537,10 @@ h2 {
 .client__container {
     display: flex;
     justify-content: space-between;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
+    flex-wrap: wrap;
 }
 
 .client__card {
@@ -608,15 +628,15 @@ h2 {
     background-color: #7f57f1;
     width: 100%;
     height: 416px;
-    padding-left: 300px;
-    padding-right: 300px;
+    padding-left: 5%;
+    padding-right: 5%;
     display: flex;
     justify-content: space-between;
     overflow: hidden;
 }
 
 .subscribe__left {
-    width: 50%;
+    width: 45%;
     height: 600px;
 }
 
@@ -636,7 +656,7 @@ h2 {
 }
 
 .subscribe__right {
-    width: 50%;
+    width: 45%;
 }
 
 .subscribe__title {
@@ -652,7 +672,6 @@ h2 {
     font-size: 18px;
     margin-bottom: 10px;
     line-height: 32px;
-    width: 640px;
 }
 
 .subscribe__form {
@@ -685,16 +704,25 @@ h2 {
 .footer {
     display: flex;
     justify-content: space-between;
-    margin: 100px 300px 100px 300px;
+    margin: 100px 5% 100px 5%;
+    flex-wrap: wrap;
 }
 
 .footer__left {
-    width: 250px;
+    width: 25%;
+}
+
+.footer__right {
+    display: flex;
+    width: 70%;
+    gap: 200px;
 }
 
 .footer__properties {
     display: flex;
     flex-direction: column;
+    padding-top: 50px;
+    width: 30%;
 }
 
 .footer__property {
@@ -739,6 +767,169 @@ h2 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 230px;
-    width: 250px;
+    height: 300px;
+    width: 30%;
+    padding-top: 50px;
+}
+
+@media screen and (max-width: 1400px) {
+    .property__photos {
+        justify-content: center;
+    }
+
+    .property__photo-3 {
+        flex-direction: row;
+        gap: 47px;
+    }
+}
+
+@media screen and (max-width: 1271px) {
+    .footer {
+        flex-direction: column;
+    }
+    .footer__right {
+        width: 100%;
+        justify-content: space-between;
+        gap: 0px;
+        flex-wrap: wrap;
+    }
+
+    .footer__properties {
+        width: 50%;
+    }
+
+    .footer__contact {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 1166px) {
+    .client__card {
+        flex-direction: column-reverse;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .footer__left {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 999px) {
+    .features__container {
+        flex-direction: column-reverse;
+    }
+    .features__cards-container {
+        width: 80%;
+    }
+
+    .features__photo {
+        margin-bottom: 20px;
+    }
+
+    .design__text {
+        text-align: center;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .design__subtitle {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .interior-1,
+    .interior-2 {
+        flex-direction: column;
+        align-items: center;
+    }
+    .interior__photo-1,
+    .interior__photo-2 {
+        margin-right: 0;
+        margin-left: 0;
+        width: 80%;
+    }
+
+    .interior__text {
+        width: 80%;
+    }
+
+    .interior-2 {
+        flex-direction: column-reverse;
+    }
+}
+
+@media screen and (max-width: 910px) {
+    .property__photos {
+        flex-direction: column;
+        align-items: center;
+    }
+    .property__photo-3 {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .footer__right {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 830px) {
+    .team__container {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 785px) {
+    .client__container {
+        justify-content: center;
+    }
+
+    .team__container {
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 700px) {
+    .hero__link {
+        padding-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .header__list {
+        gap: 20px;
+    }
+
+    .team__card {
+        width: 230px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .property__title {
+        text-align: center;
+    }
+    .features__container {
+        flex-direction: column-reverse;
+    }
+    .features__cards-container {
+        width: 95%;
+    }
+
+    .features__photo {
+        height: 300px;
+        width: 300px;
+    }
+
+    .interior__text {
+        width: 95%;
+        padding: 13px 5px;
+    }
+    .interior__photo-1,
+    .interior__photo-2 {
+        width: 95%;
+        margin-bottom: 10px;
+    }
+
+    .client__text {
+        text-align: center;
+    }
 }
