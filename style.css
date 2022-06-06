@@ -11,10 +11,9 @@ body {
 .hero {
     background-image: url("images/hero.jpg");
     width: 100%;
-    height: 952px;
     background-repeat: no-repeat;
-    background-size: cover;
     margin-bottom: 180px;
+    background-size: 100% 90%;
 }
 
 .header {
@@ -29,9 +28,19 @@ body {
     backdrop-filter: blur(22px);
 }
 
+.wrapper {
+    max-width: 1216px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .header__logo {
     width: 176px;
     height: 40px;
+}
+
+.header__logo__mobile {
+    display: none;
 }
 
 a {
@@ -62,8 +71,6 @@ h1 {
     color: white;
     display: flex;
     flex-direction: column;
-    width: 60%;
-    height: 300px;
     font-size: 18px;
     line-height: 32px;
 }
@@ -85,6 +92,7 @@ h1 {
 .hero__subtitle {
     margin-bottom: 32px;
     font-weight: 500;
+    width: 60%;
 }
 
 .btn {
@@ -105,13 +113,8 @@ h1 {
 .find__container {
     width: 90%;
     height: 212px;
-    position: absolute;
     background: white;
     border-radius: 8px;
-    left: calc(50% - 1700px / 2);
-    top: 846px;
-    display: flex;
-    flex-direction: column;
     padding-top: 40px;
     padding-left: 39px;
     margin-bottom: 40px;
@@ -128,9 +131,9 @@ h1 {
 }
 
 .find__select__container {
-    display: flex;
-    justify-content: space-between;
     margin-right: 39px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
 }
 
 .find__select {
@@ -159,6 +162,7 @@ h1 {
     display: flex;
     flex-direction: column;
 }
+
 h2 {
     color: #7f57f1;
     font-size: 48px;
@@ -195,30 +199,30 @@ h2 {
 }
 
 .property__photos {
-    width: 90%;
+    width: 100%;
     display: flex;
     flex-direction: row;
-    margin-left: 5%;
-    margin-right: 5%;
+    padding-left: 5px;
+    padding-right: 5px;
     margin-bottom: 80px;
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 20px;
+    max-width: 1220px;
+    margin: auto;
 }
 .photo__left {
-    width: 400px;
-    height: 565px;
+    width: 100%;
+    height: 100%;
     border-radius: 6px;
-    margin-right: 32px;
     position: absolute;
 }
 
 .property__photo {
-    width: 400px;
-    height: 265px;
+    width: 100%;
+    height: 100%;
     border-radius: 6px;
     margin-bottom: 32px;
-    margin-right: 32px;
     position: absolute;
 }
 
@@ -226,14 +230,12 @@ h2 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 30px;
 }
 
 .property__photo-3 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 30px;
 }
 
 .property__card {
@@ -248,7 +250,7 @@ h2 {
 }
 
 .property__card--big {
-    width: 400px;
+    width: 384px;
     height: 565px;
 }
 
@@ -472,9 +474,11 @@ h2 {
 }
 
 .team__container {
-    display: flex;
-    justify-content: space-between;
-    margin: 50px 5% 150px 5%;
+    display: grid;
+    margin: 50px 0 150px 0;
+    padding-left: 5%;
+    padding-right: 5%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .team__card {
@@ -680,7 +684,7 @@ h2 {
 }
 
 .subscribe__email {
-    width: 450px;
+    width: 70%;
     height: 56px;
     border-radius: 8px 0px 0px 8px;
     padding: 16px 24px;
@@ -691,7 +695,7 @@ h2 {
 }
 
 .subscribe__button {
-    width: 180px;
+    width: 30%;
     height: 56px;
     background-color: #865cfe;
     border-radius: 0px 8px 8px 0px;
@@ -751,6 +755,10 @@ h2 {
     font-weight: 500;
 }
 
+.footer__location {
+    width: calc(100% - 104px - 10px);
+}
+
 .footer__rent {
     color: rgba(127, 87, 241, 1);
     font-size: 18px;
@@ -772,17 +780,6 @@ h2 {
     padding-top: 50px;
 }
 
-@media screen and (max-width: 1400px) {
-    .property__photos {
-        justify-content: center;
-    }
-
-    .property__photo-3 {
-        flex-direction: row;
-        gap: 47px;
-    }
-}
-
 @media screen and (max-width: 1271px) {
     .footer {
         flex-direction: column;
@@ -794,24 +791,107 @@ h2 {
         flex-wrap: wrap;
     }
 
-    .footer__properties {
+    .footer__left {
         width: 50%;
+    }
+
+    .footer__properties {
+        width: 100%;
     }
 
     .footer__contact {
-        width: 50%;
+        width: 100%;
     }
 }
 
-@media screen and (max-width: 1166px) {
-    .client__card {
-        flex-direction: column-reverse;
+@media screen and (max-width: 1220px) {
+    .find__select__container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .find__title {
+        margin-bottom: 20px;
+    }
+
+    .find__select {
+        width: 100%;
+    }
+
+    .find__btn {
+        width: 100%;
+    }
+
+    .property__card {
+        width: 100%;
+    }
+
+    .property__card--big {
+        width: 49%;
+    }
+
+    .property__photo-2 {
+        width: 49%;
+    }
+
+    .property__photo-3 {
+        flex-direction: row;
+        gap: 22px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1180px) {
+    .hero__subtitle {
+        width: 70%;
+    }
+    .team__container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .team__card {
+        justify-self: center;
+    }
+
+    .client__container {
+        justify-content: center;
+        flex-direction: column;
+        gap: 50px;
+    }
+}
+
+@media screen and (max-width: 1074px) {
+    .subscribe__right {
+        position: absolute;
+        left: 10%;
+        width: 80%;
     }
 }
 
 @media screen and (max-width: 1050px) {
     .footer__left {
-        width: 30%;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1008px) {
+    .property__photos {
+        justify-content: center;
+    }
+
+    .property__card--big {
+        width: 60%;
+    }
+
+    .property__photo-2 {
+        gap: 22px;
+        width: 60%;
+    }
+
+    .property__photo-3 {
+        flex-direction: column;
+        width: 60%;
     }
 }
 
@@ -846,6 +926,7 @@ h2 {
         margin-right: 0;
         margin-left: 0;
         width: 80%;
+        border-radius: 8px 8px 0px 0px;
     }
 
     .interior__text {
@@ -879,23 +960,46 @@ h2 {
 }
 
 @media screen and (max-width: 785px) {
+    .hero__title {
+        font-size: 60px;
+    }
     .client__container {
         justify-content: center;
     }
-
-    .team__container {
-        justify-content: center;
+    .subscribe__title {
+        font-size: 38px;
     }
 }
+
 @media screen and (max-width: 700px) {
     .hero__link {
         padding-bottom: 10px;
+    }
+
+    .hero__subtitle {
+        width: 90%;
     }
 }
 
 @media screen and (max-width: 650px) {
     .header__list {
         gap: 20px;
+    }
+
+    .hero__title {
+        font-size: 50px;
+    }
+
+    .property__card--big {
+        width: 80%;
+    }
+
+    .property__photo-2 {
+        width: 80%;
+    }
+
+    .property__photo-3 {
+        width: 80%;
     }
 
     .team__card {
@@ -926,10 +1030,76 @@ h2 {
     .interior__photo-1,
     .interior__photo-2 {
         width: 95%;
-        margin-bottom: 10px;
     }
 
     .client__text {
         text-align: center;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .header__list {
+        font-size: 12px;
+        gap: 10px;
+    }
+
+    .hero__title {
+        font-size: 40px;
+    }
+
+    .find__select__container {
+        grid-template-columns: none;
+        grid-template-rows: repeat(4, 1fr);
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .team__container {
+        grid-template-columns: 1fr;
+        grid-template-rows: none;
+    }
+}
+@media screen and (max-width: 441px) {
+    .footer__property {
+        width: 350px;
+    }
+    .footer__property__address {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 431px) {
+    .header__logo {
+        width: 120px;
+    }
+
+    .hero__title {
+        font-size: 30px;
+    }
+    .subscribe__title {
+        font-size: 30px;
+    }
+
+    .footer__property__address {
+        font-size: 14px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .header__logo {
+        display: none;
+    }
+
+    .header__logo__mobile {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 385px) {
+    .client__container {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
     }
 }
