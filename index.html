@@ -14,17 +14,17 @@
             src="https://kit.fontawesome.com/07627d480d.js"
             crossorigin="anonymous"
         ></script>
-        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="css/style.css" />
         <title>Real Estate - Home</title>
     </head>
     <body>
         <div class="hero">
             <header class="header">
-                <img src="images/logo.svg" alt="logo" class="header__logo" />
+                <img src="assets/logos/logo.svg" alt="Logoipsum" class="header__logo" />
                 <img
-                    src="images/logo-mobile.svg"
-                    alt="logo mobile"
-                    class="header__logo__mobile"
+                    src="assets/logos/logo-mobile.svg"
+                    alt="Logoipsum"
+                    class="header__logo header__logo--mobile"
                 />
                 <nav class="header__nav">
                     <ul class="header__list">
@@ -48,167 +48,172 @@
             </div>
             <div class="find__container">
                 <div class="find__title">
-                    <p>Find Your Home</p>
+                    <h2>Find Your Home</h2>
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </div>
-                <div class="find__select__container">
+                <form class="find__form">
                     <select
                         name="location"
-                        id="location__select"
+                        id="location-select"
                         class="find__select"
                     >
                         <option value="">Location</option>
+                        <option value="rent">Rent</option>
+                        <option value="sell">Sell</option>
                     </select>
                     <select
                         name="category"
-                        id="category__select"
+                        id="category-select"
                         class="find__select"
                     >
                         <option value="">Category</option>
+                        <option value="budget">Budget</option>
                     </select>
                     <select
                         name="property"
-                        id="property__select"
+                        id="property-select"
                         class="find__select"
                     >
                         <option value="">Property Type</option>
+                        <option value="house">House</option>
+                        <option value="apartment">Apartment</option>
                     </select>
-                    <button type="button" class="find__btn btn">Search</button>
-                </div>
+                    <button type="button" class="btn btn--find">Search</button>
+                </form>
             </div>
         </div>
-        <section class="property" id="property">
-            <div class="property__text">
-                <h2 class="property__title">Featured Properties</h2>
-                <p class="property__subtitle">
+        <section class="section property" id="property">
+            <div class="section__text">
+                <h2 class="section__title">Featured Properties</h2>
+                <p class="section__subtitle">
                     Amet minim mollit non deserunt ullamco est sit aliqua dolor
                     do amet sint. Velit officia consequat duis enim velit
                     mollit. Exercitation veniam consequat sunt nostrud amet.
                 </p>
             </div>
             <div class="property__photos">
-                <div class="property__card property__card--big">
+                <article class="property__card property__card--big">
                     <img
-                        src="images/featured-1.jpg"
+                        src="assets/featured/featured-1.jpg"
                         alt="first property"
-                        class="photo__left"
+                        class="property__card__photo"
                     />
-                    <div class="photo__overlay photo__overlay--big">
-                        <p class="photo__title">New Property</p>
-                        <p class="photo__subtitle">
+                    <div class="property__card__overlay property__card__overlay--big">
+                        <h3 class="property__card__title">New Property</h3>
+                        <p class="property__card__subtitle">
                             Amet minim mollit non deserunt ullamco est sit
                             aliqua dolor do amet
                         </p>
-                        <a href="#" class="arrow__link">
+                        <a href="#" class="property__card__link">
                             <img
-                                src="images/icon.svg"
-                                alt="arrow"
-                                class="arrow"
+                                src="assets/icons/icon.svg"
+                                alt=""
+                                class="property__card__icon"
                         /></a>
                     </div>
-                </div>
+                </article>
                 <div class="property__photo-2">
-                    <div class="property__card">
+                    <article class="property__card">
                         <img
-                            src="images/featured-2.jpg"
+                            src="assets/featured/featured-2.jpg"
                             alt="second property"
-                            class="property__photo"
+                            class="property__card__photo"
                         />
-                        <div class="photo__overlay">
-                            <p class="photo__title">New Property</p>
-                            <p class="photo__subtitle">
+                        <div class="property__card__overlay">
+                            <h3 class="property__card__title">New Property</h3>
+                            <p class="property__card__subtitle">
                                 Amet minim mollit non deserunt ullamco est sit
                                 aliqua dolor do amet
                             </p>
-                            <a href="#" class="arrow__link">
+                            <a href="#" class="property__card__link">
                                 <img
-                                    src="images/icon.svg"
-                                    alt="arrow"
-                                    class="arrow"
+                                    src="assets/icons/icon.svg"
+                                    alt=""
+                                    class="property__card__icon"
                             /></a>
                         </div>
-                    </div>
-                    <div class="property__card">
+                    </article>
+                    <article class="property__card">
                         <img
-                            src="images/featured-3.jpg"
+                            src="assets/featured/featured-3.jpg"
                             alt="third property"
-                            class="property__photo"
+                            class="property__card__photo"
                         />
-                        <div class="photo__overlay">
-                            <p class="photo__title">New Property</p>
-                            <p class="photo__subtitle">
+                        <div class="property__card__overlay">
+                            <h3 class="property__card__title">New Property</h3>
+                            <p class="property__card__subtitle">
                                 Amet minim mollit non deserunt ullamco est sit
                                 aliqua dolor do amet
                             </p>
-                            <a href="#" class="arrow__link">
+                            <a href="#" class="property__card__link">
                                 <img
-                                    src="images/icon.svg"
-                                    alt="arrow"
-                                    class="arrow"
+                                    src="assets/icons/icon.svg"
+                                    alt=""
+                                    class="property__card__icon"
                             /></a>
                         </div>
-                    </div>
+                    </article>
                 </div>
                 <div class="property__photo-3">
-                    <div class="property__card">
+                    <article class="property__card">
                         <img
-                            src="images/featured-4.jpg"
+                            src="assets/featured/featured-4.jpg"
                             alt="fourth property"
-                            class="property__photo"
+                            class="property__card__photo"
                         />
-                        <div class="photo__overlay">
-                            <p class="photo__title">New Property</p>
-                            <p class="photo__subtitle">
+                        <div class="property__card__overlay">
+                            <h3 class="property__card__title">New Property</h3>
+                            <p class="property__card__subtitle">
                                 Amet minim mollit non deserunt ullamco est sit
                                 aliqua dolor do amet
                             </p>
-                            <a href="#" class="arrow__link">
+                            <a href="#" class="property__card__link">
                                 <img
-                                    src="images/icon.svg"
-                                    alt="arrow"
-                                    class="arrow"
+                                    src="assets/icons/icon.svg"
+                                    alt=""
+                                    class="property__card__icon"
                             /></a>
                         </div>
-                    </div>
-                    <div class="property__card">
+                    </article>
+                    <article class="property__card">
                         <img
-                            src="images/featured-5.jpg"
+                            src="assets/featured/featured-5.jpg"
                             alt="fifth property"
-                            class="property__photo"
+                            class="property__card__photo"
                         />
-                        <div class="photo__overlay">
-                            <p class="photo__title">New Property</p>
-                            <p class="photo__subtitle">
+                        <div class="property__card__overlay">
+                            <h3 class="property__card__title">New Property</h3>
+                            <p class="property__card__subtitle">
                                 Amet minim mollit non deserunt ullamco est sit
                                 aliqua dolor do amet
                             </p>
-                            <a href="#" class="arrow__link">
+                            <a href="#" class="property__card__link">
                                 <img
-                                    src="images/icon.svg"
-                                    alt="arrow"
-                                    class="arrow"
+                                    src="assets/icons/icon.svg"
+                                    alt=""
+                                    class="property__card__icon"
                             /></a>
                         </div>
-                    </div>
+                    </article>
                 </div>
             </div>
         </section>
-        <section class="features">
-            <h2 class="features__title">Our Features</h2>
+        <section class="section features">
+            <h2 class="section__title features__title">Our Features</h2>
             <div class="features__container">
                 <div class="features__cards-container">
                     <div class="features__card">
                         <h3 class="features__card__title">
                             Living Inside a Nature
                         </h3>
-                        <p class="features__card__subtitle">
+                        <p class="features__card__text">
                             Lorem ipsum dolor sit amet, consectetur adipiscing
                             elit. Eget diam habitant massa in.
                         </p>
                     </div>
                     <div class="features__card">
                         <h3 class="features__card__title">Royal Touch Paint</h3>
-                        <p class="features__card__subtitle">
+                        <p class="features__card__text">
                             Lorem ipsum dolor sit amet, consectetur adipiscing
                             elit. Eget diam habitant massa in.
                         </p>
@@ -217,39 +222,39 @@
                         <h3 class="features__card__title">
                             Luxurious Fittings
                         </h3>
-                        <p class="features__card__subtitle">
+                        <p class="features__card__text">
                             Lorem ipsum dolor sit amet, consectetur adipiscing
                             elit. Eget diam habitant massa in.
                         </p>
                     </div>
                 </div>
                 <img
-                    src="images/our-features-1.jpg"
-                    alt="photo features"
+                    src="assets/our-features/our-features-1.jpg"
+                    alt="Our features"
                     class="features__photo"
                 />
             </div>
         </section>
-        <section class="design">
-            <div class="design__text">
-                <h2 class="design__title">Recent Properties</h2>
-                <p class="design__subtitle">
+        <section class="section recent">
+            <div class="section__text">
+                <h2 class="section__title">Recent Properties</h2>
+                <p class="section__subtitle">
                     Amet minim mollit non deserunt ullamco est sit aliqua dolor
                     do amet sint. Velit officia consequat duis enim velit
                     mollit. Exercitation veniam consequat sunt nostrud amet.
                 </p>
             </div>
-            <div class="interior">
-                <div class="interior-1">
+            <div class="recent__container">
+                <article class="recent__row recent__row-1">
                     <img
-                        src="images/recent-1.jpg"
-                        alt="photo recent 1"
-                        class="interior__photo interior__photo-1"
+                        src="assets/recent/recent-1.jpg"
+                        alt="Recent Property 1"
+                        class="recent__row__photo"
                     />
-                    <div class="interior__text">
+                    <div class="recent__card">
                         <div>
-                            <h3 class="interior__title">Interior Design</h3>
-                            <p class="interior__subtitle">
+                            <h3 class="recent__card__title">Interior Design</h3>
+                            <p class="recent__card__text">
                                 Amet minim mollit non deserunt ullamco est sit
                                 aliqua dolor do amet sint. Velit officia
                                 consequat duis enim velit mollit. Exercitation
@@ -257,21 +262,21 @@
                                 mollit non deserunt ullamco est sit aliqua dolor
                                 do amet sint. Velit officia consequat duis enim
                                 velit mollit...
-                                <a href="#" class="read__more">Read more</a>
+                                <a href="#" class="recent__card__link">Read more</a>
                             </p>
                         </div>
-                        <p class="rent">
-                            <span class="rent__price">$ 20,000/</span>Month
+                        <p class="recent__card__rent">
+                            <span class="recent__card__price">$ 20,000/</span>Month
                         </p>
                     </div>
-                </div>
-                <div class="interior-2">
-                    <div class="interior__text">
+                </article>
+                <article class="recent__row recent__row-2">
+                    <div class="recent__card">
                         <div>
-                            <h3 class="interior__title--black interior__title">
+                            <h3 class="recent__card__title--black recent__card__title">
                                 Interior Design
                             </h3>
-                            <p class="interior__subtitle">
+                            <p class="recent__card__text">
                                 Amet minim mollit non deserunt ullamco est sit
                                 aliqua dolor do amet sint. Velit officia
                                 consequat duis enim velit mollit. Exercitation
@@ -279,178 +284,178 @@
                                 mollit non deserunt ullamco est sit aliqua dolor
                                 do amet sint. Velit officia consequat duis enim
                                 velit mollit...
-                                <a href="#" class="read__more"> Read more </a>
+                                <a href="#" class="recent__card__link"> Read more </a>
                             </p>
                         </div>
-                        <p class="rent">
-                            <span class="rent__price">$ 26,000/</span>Month
+                        <p class="recent__card__rent">
+                            <span class="recent__card__price">$ 26,000/</span>Month
                         </p>
                     </div>
                     <img
-                        src="images/recent-2.jpg"
-                        alt="interior photo 2"
-                        class="interior__photo interior__photo-2"
+                        src="assets/recent/recent-2.jpg"
+                        alt="Recent Property 2"
+                        class="recent__row__photo"
                     />
-                </div>
+                </article>
             </div>
-            <a href="#" class="interior__btn btn">View more</a>
+            <a href="#" class="btn btn--white">View more</a>
         </section>
-        <section class="team">
-            <div class="team__text">
-                <h2 class="team__title">Meet Our Team</h2>
-                <p class="team__subtitle">
+        <section class="section team">
+            <div class="section__text">
+                <h2 class="section__title">Meet Our Team</h2>
+                <p class="section__subtitle">
                     Amet minim mollit non deserunt ullamco est sit aliqua dolor
                     do amet sint. Velit officia consequat duis enim velit
                     mollit. Exercitation veniam consequat sunt nostrud amet.
                 </p>
             </div>
             <div class="team__container">
-                <div class="team__card">
+                <article class="team__card">
                     <img
-                        src="images/team-1.jpg"
+                        src="assets/team/team-1.jpg"
                         alt="Kathryn Murphy"
                         class="team__photo"
                     />
-                    <p class="team__name">Kathryn Murphy</p>
+                    <h3 class="team__name">Kathryn Murphy</h3>
                     <p class="team__job">Co-Founder</p>
                     <div class="team__social">
-                        <a href="#" class="social__link">
+                        <a href="#" class="team__social__link">
                             <img
-                                src="images/facebook.svg"
+                                src="assets/icons/facebook.svg"
                                 alt="facebook"
-                                class="social__icon"
+                                class="team__social__icon"
                         /></a>
-                        <a href="#" class="social__link">
+                        <a href="#" class="team__social__link">
                             <img
-                                src="images/instagram.svg"
+                                src="assets/icons/instagram.svg"
                                 alt="instagram"
-                                class="social__icon"
+                                class="team__social__icon"
                         /></a>
-                        <a href="#" class="social__link">
+                        <a href="#" class="team__social__link">
                             <img
-                                src="images/linkedin.svg"
+                                src="assets/icons/linkedin.svg"
                                 alt="linkedin"
-                                class="social__icon"
+                                class="team__social__icon"
                         /></a>
-                        <a href="#" class="social__link">
+                        <a href="#" class="team__social__link">
                             <img
-                                src="images/twitter.svg"
+                                src="assets/icons/twitter.svg"
                                 alt="twitter"
-                                class="social__icon"
+                                class="team__social__icon"
                         /></a>
                     </div>
-                </div>
-                <div class="team__card">
+                </article>
+                <article class="team__card">
                     <img
-                        src="images/team-2.jpg"
+                        src="assets/team/team-2.jpg"
                         alt="Brooklyn Simmons"
                         class="team__photo"
                     />
-                    <p class="team__name">Brooklyn Simmons</p>
+                    <h3 class="team__name">Brooklyn Simmons</h3>
                     <p class="team__job">Founder</p>
                     <div class="team__social">
-                        <a href="#" class="social__link">
+                        <a href="#" class="team__social__link">
                             <img
-                                src="images/facebook.svg"
+                                src="assets/icons/facebook.svg"
                                 alt="facebook"
-                                class="social__icon"
+                                class="team__social__icon"
                         /></a>
-                        <a href="#" class="social__link">
+                        <a href="#" class="team__social__link">
                             <img
-                                src="images/instagram.svg"
+                                src="assets/icons/instagram.svg"
                                 alt="instagram"
-                                class="social__icon"
+                                class="team__social__icon"
                         /></a>
-                        <a href="#" class="social__link">
+                        <a href="#" class="team__social__link">
                             <img
-                                src="images/linkedin.svg"
+                                src="assets/icons/linkedin.svg"
                                 alt="linkedin"
-                                class="social__icon"
+                                class="team__social__icon"
                         /></a>
-                        <a href="#" class="social__link">
+                        <a href="#" class="team__social__link">
                             <img
-                                src="images/twitter.svg"
+                                src="assets/icons/twitter.svg"
                                 alt="twitter"
-                                class="social__icon"
+                                class="team__social__icon"
                         /></a>
                     </div>
-                </div>
-                <div class="team__card">
+                </article>
+                <article class="team__card">
                     <img
-                        src="images/team-3.jpg"
+                        src="assets/team/team-3.jpg"
                         alt="Floyd Miles"
                         class="team__photo"
                     />
-                    <p class="team__name">Floyd Miles</p>
+                    <h3 class="team__name">Floyd Miles</h3>
                     <p class="team__job">Founder</p>
                     <div class="team__social">
-                        <a href="#" class="social__link">
+                        <a href="#" class="team__social__link">
                             <img
-                                src="images/facebook.svg"
+                                src="assets/icons/facebook.svg"
                                 alt="facebook"
-                                class="social__icon"
+                                class="team__social__icon"
                         /></a>
-                        <a href="#" class="social__link">
+                        <a href="#" class="team__social__link">
                             <img
-                                src="images/instagram.svg"
+                                src="assets/icons/instagram.svg"
                                 alt="instagram"
-                                class="social__icon"
+                                class="team__social__icon"
                         /></a>
-                        <a href="#" class="social__link">
+                        <a href="#" class="team__social__link">
                             <img
-                                src="images/linkedin.svg"
+                                src="assets/icons/linkedin.svg"
                                 alt="linkedin"
-                                class="social__icon"
+                                class="team__social__icon"
                         /></a>
-                        <a href="#" class="social__link">
+                        <a href="#" class="team__social__link">
                             <img
-                                src="images/twitter.svg"
+                                src="assets/icons/twitter.svg"
                                 alt="twitter"
-                                class="social__icon"
+                                class="team__social__icon"
                         /></a>
                     </div>
-                </div>
-                <div class="team__card">
+                </article>
+                <article class="team__card">
                     <img
-                        src="images/team-4.jpg"
+                        src="assets/team/team-4.jpg"
                         alt="Ronald Richards"
                         class="team__photo"
                     />
-                    <p class="team__name">Ronald Richards</p>
+                    <h3 class="team__name">Ronald Richards</h3>
                     <p class="team__job">Co-Founder</p>
                     <div class="team__social">
-                        <a href="#" class="social__link">
+                        <a href="#" class="team__social__link">
                             <img
-                                src="images/facebook.svg"
+                                src="assets/icons/facebook.svg"
                                 alt="facebook"
-                                class="social__icon"
+                                class="team__social__icon"
                         /></a>
-                        <a href="#" class="social__link">
+                        <a href="#" class="team__social__link">
                             <img
-                                src="images/instagram.svg"
+                                src="assets/icons/instagram.svg"
                                 alt="instagram"
-                                class="social__icon"
+                                class="team__social__icon"
                         /></a>
-                        <a href="#" class="social__link">
+                        <a href="#" class="team__social__link">
                             <img
-                                src="images/linkedin.svg"
+                                src="assets/icons/linkedin.svg"
                                 alt="linkedin"
-                                class="social__icon"
+                                class="team__social__icon"
                         /></a>
-                        <a href="#" class="social__link">
+                        <a href="#" class="team__social__link">
                             <img
-                                src="images/twitter.svg"
+                                src="assets/icons/twitter.svg"
                                 alt="twitter"
-                                class="social__icon"
+                                class="team__social__icon"
                         /></a>
                     </div>
-                </div>
+                </article>
             </div>
         </section>
-        <section class="client">
-            <div class="client__text team__text">
-                <h2 class="client__title">Our Clients Speak</h2>
-                <p class="client__subtitle">
+        <section class="section client">
+            <div class="section__text">
+                <h2 class="section__title">Our Clients Speak</h2>
+                <p class="section__subtitle">
                     We have been working with clients around the world
                 </p>
             </div>
@@ -458,14 +463,14 @@
                 <div class="client__card">
                     <div class="client__testimony">
                         <img
-                            src="images/icon-quotes.svg"
+                            src="assets/icons/icon-quotes.svg"
                             alt=""
-                            class="quotes"
+                            class="client__icon"
                         />
                         <p class="client__testimony__title">
                             Professional Partner
                         </p>
-                        <p class="client__testimony__subtitle">
+                        <p class="client__testimony__text">
                             Lorem ipsum dolor sit amet, consectetur adipiscing
                             elit. Auctor non sit sed magna pharetra in amet
                             porta enim.
@@ -473,7 +478,7 @@
                     </div>
                     <div class="client__author">
                         <img
-                            src="images/client-1.jpg"
+                            src="assets/clients/client-1.jpg"
                             alt="Lorri Warf Photo"
                             class="client__photo"
                         />
@@ -484,14 +489,14 @@
                 <div class="client__card">
                     <div class="client__testimony">
                         <img
-                            src="images/icon-quotes.svg"
+                            src="assets/icons/icon-quotes.svg"
                             alt=""
-                            class="quotes"
+                            class="client__icon"
                         />
                         <p class="client__testimony__title">
                             Incredible Experience
                         </p>
-                        <p class="client__testimony__subtitle">
+                        <p class="client__testimony__text">
                             Lorem ipsum dolor sit amet, consectetur adipiscing
                             elit. Auctor non sit sed magna pharetra in amet
                             porta enim.
@@ -499,7 +504,7 @@
                     </div>
                     <div class="client__author">
                         <img
-                            src="images/client-2.jpg"
+                            src="assets/clients/client-2.jpg"
                             alt="David Elson Photo"
                             class="client__photo"
                         />
@@ -510,14 +515,14 @@
                 <div class="client__card">
                     <div class="client__testimony">
                         <img
-                            src="images/icon-quotes.svg"
+                            src="assets/icons/icon-quotes.svg"
                             alt=""
-                            class="quotes"
+                            class="client__icon"
                         />
                         <p class="client__testimony__title">
                             Dependable & Responsive
                         </p>
-                        <p class="client__testimony__subtitle">
+                        <p class="client__testimony__text">
                             Lorem ipsum dolor sit amet, consectetur adipiscing
                             elit. Auctor non sit sed magna pharetra in amet
                             porta enim.
@@ -525,7 +530,7 @@
                     </div>
                     <div class="client__author">
                         <img
-                            src="images/client-3.jpg"
+                            src="assets/clients/client-3.jpg"
                             alt="Ricky Smith Photo"
                             class="client__photo"
                         />
@@ -534,12 +539,12 @@
                     </div>
                 </div>
             </div>
-            <div class="client__dot">
-                <i class="fa-solid fa-circle-dot dot"></i>
+            <div class="client__dots">
+                <i class="fa-solid fa-circle-dot client__dot"></i>
 
-                <i class="fa-solid fa-circle dot__middle"></i>
+                <i class="fa-solid fa-circle client__dot--full"></i>
 
-                <i class="fa-solid fa-circle-dot dot"></i>
+                <i class="fa-solid fa-circle-dot client__dot"></i>
             </div>
         </section>
         <section class="subscribe" id="contact">
@@ -549,7 +554,7 @@
             </div>
             <div class="subscribe__right">
                 <h2 class="subscribe__title">Don't Miss A Thing!</h2>
-                <p class="subscribe__subtitle">
+                <p class="subscribe__text">
                     Subscribe with Email and loads of interesting news will be
                     sent to you on a daily basis.
                 </p>
@@ -570,12 +575,12 @@
             <div class="footer__left">
                 <h2>
                     <img
-                        src="images/logo-black.svg"
+                        src="assets/logos/logo-black.svg"
                         alt="logo logoipsum"
                         class="logo footer__logo"
                     />
                 </h2>
-                <p class="grey">
+                <p class="footer__text grey">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </p>
             </div>
@@ -584,7 +589,7 @@
                     <h3 class="footer__title">Recent Properties</h3>
                     <div class="footer__property">
                         <img
-                            src="images/recent-3.jpg"
+                            src="assets/recent/recent-3.jpg"
                             alt="illinois property"
                             class="photo footer__photo"
                         />
@@ -597,7 +602,7 @@
                     </div>
                     <div class="footer__property">
                         <img
-                            src="images/recent-4.jpg"
+                            src="assets/recent/recent-4.jpg"
                             alt="connecticut property"
                             class="photo footer__photo"
                         />
