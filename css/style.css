@@ -18,7 +18,7 @@ ul {
 }
 
 .hero {
-    background-image: url("/assets/background/hero.jpg");
+    background-image: url("../assets/background/hero.jpg");
     background-repeat: no-repeat;
     margin-bottom: 180px;
     background-size: 100% 90%;
@@ -97,7 +97,7 @@ ul {
     width: 143px;
     height: 48px;
     color: white;
-    background: #7F57F1;
+    background: #7f57f1;
     box-shadow: 0px 1px 2px rgba(127, 87, 241, 0.05);
     border-radius: 8px;
     cursor: pointer;
@@ -112,7 +112,7 @@ ul {
     border-radius: 6px;
 }
 
-.btn--white{
+.btn--white {
     width: 168px;
     background-color: white;
     color: rgba(127, 87, 241, 1);
@@ -265,7 +265,8 @@ ul {
     margin-top: 25px;
 }
 
-.property__photo-2, .property__photo-3 {
+.property__photo-2,
+.property__photo-3 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -712,7 +713,6 @@ ul {
     .footer__left {
         width: 50%;
     }
-
 }
 
 @media screen and (max-width: 1220px) {
@@ -773,7 +773,8 @@ ul {
     .team__card {
         justify-self: center;
     }
-    .footer__properties, .footer__contact{
+    .footer__properties,
+    .footer__contact {
         width: 100%;
     }
 }
@@ -803,7 +804,6 @@ ul {
         width: 80%;
     }
 }
-
 
 @media screen and (max-width: 1008px) {
     .property__photos {
@@ -836,7 +836,7 @@ ul {
         border-radius: 8px 8px 0px 0px;
     }
 
-    .recent__card{
+    .recent__card {
         width: 80%;
     }
 
@@ -848,7 +848,6 @@ ul {
         width: 100%;
     }
 }
-
 
 @media screen and (max-width: 910px) {
     .property__photos {
@@ -906,7 +905,6 @@ ul {
     }
 }
 
-
 @media screen and (max-width: 656px) {
     .header__logo {
         display: none;
@@ -959,9 +957,9 @@ ul {
 
     .recent__card {
         width: 95%;
-        padding: 13px 5px;
+        padding: 13px;
     }
-    .recent__row__photo{
+    .recent__row__photo {
         width: 95%;
     }
 
@@ -971,7 +969,7 @@ ul {
 }
 
 @media screen and (max-width: 575px) {
-    section__title {
+    .section__title {
         font-size: 40px;
     }
 
@@ -995,12 +993,12 @@ ul {
         font-size: 16px;
     }
 
-    .find__select__container {
+    .find__form {
         grid-template-columns: none;
         grid-template-rows: repeat(4, 1fr);
+        justify-content: initial;
     }
 }
-
 
 @media screen and (max-width: 500px) {
     .team__container {
@@ -1023,17 +1021,20 @@ ul {
         font-size: 30px;
     }
 
-    .footer__property{
+    .footer__property {
         width: 100%;
     }
     .footer__property__address {
         font-size: 14px;
         width: 100%;
     }
-
 }
 
 @media screen and (max-width: 420px) {
+    .find__title {
+        font-size: 16px;
+    }
+
     .section__title {
         font-size: 30px;
     }
